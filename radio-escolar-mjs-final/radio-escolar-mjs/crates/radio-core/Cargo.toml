@@ -1,0 +1,13 @@
+[package]
+name = "radio-core"
+version = "1.0.0"
+edition = "2021"
+description = "Regras do agendador da Rádio Escolar Mestre João Silvério (sem dependências obrigatórias)"
+license = "MIT"
+
+[features]
+default = []
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"], optional = true }
